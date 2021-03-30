@@ -1,19 +1,9 @@
 pipeline {
-    agent any 
+    agent { label 'master' }
     stages {
-        stage('Build') { 
+        stage('build') {
             steps {
-                // 
-            }
-        }
-        stage('Test') { 
-            steps {
-                // 
-            }
-        }
-        stage('Deploy') { 
-            steps {
-                // 
+                echo "Hello World!"
             }
         }
     }
